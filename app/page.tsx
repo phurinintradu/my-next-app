@@ -1,103 +1,46 @@
-import Image from "next/image";
-
-export default function Home() {
+import Footer from "@/components/Footer";
+import MenuBar from "@/components/MenuBar";
+export default function IndexPage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div>
+      <MenuBar />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/*section 1*/}
+      <div>
+        <div>
+          <div className="alert alert-warning rounded" role="alert">
+            <p className="h1 text-center kanit-bold">เว็ปไซต์นี้เป็นเพียงตัวอย่างการทำโปรไฟล์ส่วนตัว</p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="section1-box">
+          <h1 className="section1-name kanit-semibold">Hey I'm Phurin</h1>
+          <p className="section1-meta-data">I'm a student at rahamangla university of technology Krungthep <br />
+            i am ศึกษา in the คณะบริหารธุรกิจ สาขานวัตกรรมระบบสารสนเทศน์ </p>
+          <img src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t39.30808-6/488906647_3129530830547078_4600288233173795265_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGZCHBXtbRy6se3vNJ3ff1wJjMTpTdFTu8mMxOlN0VO7-QIMx3lVm0gDsRE7WPyXmoWSi4dEkhdsX9E7FbBYrW8&_nc_ohc=gVXv2pmlcoIQ7kNvwH_M4G6&_nc_oc=AdnjaXRA4WvX5wgQnWhNaW1njikqYueMOfOV3m-DqkD3rFJvLIn1GnGkgSwnky-0JhY&_nc_zt=23&_nc_ht=scontent.fbkk14-1.fna&_nc_gid=SLfX-8oICmpUNNO_SQZeYQ&oh=00_AfHB6q9XpTC38FU5nlpc4EYC9OptM985tgvwvLF7ObgV3A&oe=681A1177" alt="My Picture" classname="section1-profile-picture " />
+          <p className="section1-description kanit-light">ฉันกำลังเรียนเขียนเว็ปฉันกำลังเรียนเขียนเว็ปไซต์ vscode</p>
+        </div>
+        <div className="section2-box">
+          <a className="section2-contact-link kanit-semibold" href="https://www.facebook.com/klarock.phurin">Facebook</a>
+          <br />
+          <a className="section2-contact-link kanit-semibold" href="https://github.com/">github</a>
+          <br />
+        </div>
+        <div className="section3-box">
+          <br />
+          <div className="section3-box-a">
+            <h1>ประวัติการศึกษา</h1>
+            <p>ประถมศึกษา: โรงเรียนขจรโรจน์วิทยา</p>
+            <p>มัธยมศึกษา: โรงเรียนขจรโรจน์วิทยา</p>
+            <p>ปวช.-ปวส.: วิทยาลัยพณิชยการเชตุพน</p>
+          </div>
+          <div className="section3-box-b">
+            <h1>ประสบการณ์ฝึกงาน</h1>
+            <p>สำนักงานเขตทุ่งครุ</p>
+            <p>การไฟฟ้านครหลวง</p>
+          </div>
+        </div>
+      </div>
+      <Footer/>
     </div>
   );
 }
