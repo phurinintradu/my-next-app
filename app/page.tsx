@@ -3,7 +3,7 @@ import MenuBar from "@/components/MenuBar";
 export default function IndexPage() {
   return (
     <div>
-      <MenuBar />
+      <MenuBar page={"หน้าแรก"}/>
 
       {/*section 1*/}
       <div>
